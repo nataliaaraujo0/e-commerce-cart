@@ -5,8 +5,23 @@ const INITIAL_STATE: IcartState = {
   items: [],
 };
 
-const cart: Reducer<IcartState> = (state, action) => {
-  console.log(state, action);
+const cart: Reducer<IcartState> = (state = INITIAL_STATE, action) => {
+  switch (action.type) {
+    case "ADD_PRODUCT_TO_CART": {
+      const { product } = action.payload;
+
+      return {
+        ...state,
+        items: [
+          ...state.items,
+          {
+            product,
+            quantity: 1,
+          },
+        ],
+      };
+    }
+  }
 
   return INITIAL_STATE;
 };
