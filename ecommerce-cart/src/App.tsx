@@ -1,5 +1,6 @@
 import React from 'react';
 import { Provider } from 'react-redux';
+import Cart from './components/Cart';
 import Catalog from './components/Catalog';
 
 
@@ -10,6 +11,7 @@ function App() {
     <Provider store={store}>
       <div className="App">
         <Catalog />
+        <Cart />
       </div>
     </Provider>
   );

@@ -21,9 +21,10 @@ const cart: Reducer<IcartState> = (state = INITIAL_STATE, action) => {
         ],
       };
     }
+    default: {
+      return state;
+    }
   }
-
-  return INITIAL_STATE;
 };
 
 export default cart;
