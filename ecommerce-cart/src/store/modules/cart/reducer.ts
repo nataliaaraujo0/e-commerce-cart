@@ -1,11 +1,11 @@
 import { Reducer } from "redux";
-import { IcartState } from "./types";
+import { ICartState } from "./types";
 
-const INITIAL_STATE: IcartState = {
+const INITIAL_STATE: ICartState = {
   items: [],
 };
 
-const cart: Reducer<IcartState> = (state = INITIAL_STATE, action) => {
+const cart: Reducer<ICartState> = (state = INITIAL_STATE, action) => {
   switch (action.type) {
     case "ADD_PRODUCT_TO_CART": {
       const { product } = action.payload;

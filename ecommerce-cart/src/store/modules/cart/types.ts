@@ -3,10 +3,10 @@ export interface IProduct {
   title: string;
   price: number;
 }
-export interface IcartItem {
+export interface ICartItem {
   product: IProduct;
   quantity: number;
 }
-export interface IcartState {
-  items: IcartItem[];
+export interface ICartState {
+  items: ICartItem[];
 }
