@@ -1,5 +1,5 @@
 function cart() {
-  return ["reducer do modulo cart"];
+  return [];
 }
 
 export default cart;

@@ -1,5 +1,7 @@
 import { createStore } from "redux";
-
-const store = createStore(() => ["estado global do redux"]);
+import cart from "./modules/cart/reducer";
+const store = createStore(() => ({
+  cart,
+}));
 
 export default store;
