@@ -21,7 +21,6 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
     }, [dispatch, product])
 
     return (
-
         <article >
             <strong>{product.title}</strong>{" - "}
             <span>{product.price}</span> {" "}
@@ -31,7 +30,6 @@ const CatalogItem: React.FC<CatalogItemProps> = ({ product }) => {
             >Comprar</button>
 
             {hasFailedStockCheck && <span style={{ color: 'red' }}>Falta de estoque!</span>}
-
         </article>
     );
 }

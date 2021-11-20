@@ -4,12 +4,8 @@ import { IState } from "../store";
 import { ICartItem } from "../store/modules/cart/types";
 
 const Cart: React.FC = () => {
-
     const cart = useSelector<IState, ICartItem[]>(state => state.cart.items);
-
-
     return (
-
         <table>
             <thead>
                 <tr>
@@ -19,7 +15,6 @@ const Cart: React.FC = () => {
                     <th>Subtotal</th>
                 </tr>
             </thead>
-
             <tbody>
                 {cart.map(item => (
                     <tr key={item.product.id}>
@@ -30,9 +25,7 @@ const Cart: React.FC = () => {
                     </tr>
                 ))}
             </tbody>
-
         </table>
-
     );
 }
 export default Cart;

@@ -4,7 +4,6 @@ import { IProduct } from '../store/modules/cart/types';
 import CatalogItem from './CatalogItem';
 
 const Catalog: React.FC = () => {
-
     const [catalog, setCatalog] = useState<IProduct[]>([]);
 
     useEffect(() => {
